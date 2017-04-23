@@ -8,10 +8,8 @@
 	<body>
 		<div class="container">
 			<header class="main-header">
-				<div class="header-logo">
-					<a href="index.html">лого</a>
-				</div>
-				<nav class="inner-navigation">
+				<a href="index.html"  class="header-logo">лого</a>
+				<nav class="main-navigation">
 					<ul>
 						<li>
 							<a href="№">информация</a>
@@ -22,28 +20,42 @@
 						<li>
 							<a href="#">карта штата</a>
 						</li>
-						<li>гостиницы</li>
+						<li>
+							<a>гостиницы</a>
+						</li>
 					</ul>
 				</nav>
 			</header>
-			<form action="#" method="get" class="filters">
+			<form action="#" method="get" class="filters clearfix">
 				<fieldset class="filter-1">
 					<legend>инфраструктура</legend>
+					<p>
 					<input type="checkbox" id="pool" name="pool" checked>
 					<label for="pool">бассейн</label>
+					</p>
+					<p>
 					<input type="checkbox" id="parking" name="parking">
 					<label for="parking">парковка</label>
+					</p>
+					<p>
 					<input type="checkbox" id="wifi" name="wifi">
 					<label for="wifi">wi-fi</label>
+					</p>
 				</fieldset>
 				<fieldset class="filter-2">
 					<legend>тип жилья</legend>
+					<p>
 					<input type="checkbox" id="hotel" name="hotel" checked>
 					<label for="hotel">гостиница</label>
+					</p>
+					<p>
 					<input type="checkbox" id="motel" name="motel" checked>
 					<label for="motel">мотель</label>
+					</p>
+					<p>
 					<input type="checkbox" id="apartment" name="apartment" checked>
 					<label for="apartment">апартаменты</label>
+					</p>
 				</fieldset>
 				<fieldset class="filter-3">
 					<legend>стоимость в сутки(р)</legend>
@@ -69,7 +81,7 @@
 				</div>
 			</div>
 			<div class="hotels">
-				<div class="hotel">
+				<div class="hotel clearfix">
 					<div class="hotel-image"><img src="http://placehold.it/150x100" alt="Amara Resort & Spa"></div>
 					<div class="hotel-description">
 						<a href="#" class="hotel-title">Amara Resort & Spa</a>
@@ -87,7 +99,7 @@
 						<p class="rating-text">рейтинг:8,5</p>
 					</div>
 				</div>
-				<div class="hotel">
+				<div class="hotel clearfix">
 					<div class="hotel-image"><img src="http://placehold.it/150x100" alt="Desert Quail Inn"></div>
 					<div class="hotel-description">
 						<a href="#" class="hotel-title">Desert Quail Inn</a>
@@ -105,7 +117,7 @@
 						<p class="rating-text">рейтинг:8,9</p>
 					</div>
 				</div>
-				<div class="hotel">
+				<div class="hotel clearfix">
 					<div class="hotel-image"><img src="http://placehold.it/150x100" alt="Villas at Poco Diablo"></div>
 					<div class="hotel-description">
 						<a href="#" class="hotel-title">Villas at Poco Diablo</a>
@@ -136,8 +148,9 @@
 					<a href="#">youtube</a>
 				</div>
 				<div class="copyright">
-					<p>website by Skudilo for</p>
+					<p>website by Skudilo for
 					<a href="https://htmlacademy.ru/intensive/htmlcss">html <br> academy</a>
+					</p>
 				</div>
 			</footer>
 		</div>
