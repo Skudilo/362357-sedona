@@ -184,27 +184,32 @@ body {
 
 .results {
 	padding: 0 72px;
+	font-size: 0;
 }
 
 .find-text {
 	display: inline-block;
 	width: 114px;
 	margin-right: 49px;
+	font-size: 14px;
 }
 
 .sorting-text {
 	display: inline-block;
 	width: 76px;
 	margin-right: 39px;
+	font-size: 14px;
 }
 
 .sorting-list {
 	display: inline-block;
+	font-size: 0;
 }
 .sorting-list li {
 	display: inline-block;
 	margin-right: 33px;
 	min-height: 86px;
+	font-size: 14px;
 }
 
 .hotel {
@@ -213,16 +218,20 @@ body {
 .hotel-image {
 	float: left;
 	width: 135px;
-	margin-right: 30px
+	margin-right: 30px;
 }
 
 .hotel-description {
 	float: left;
-	width: 780px
+	width: 780px;
 }
 
+.hotel-text {
+	font-size: 0;
+}
 .hotel-text p {
 	display: inline-block;
+	font-size: 14px;
 }
 
 .hotel-ratings {
