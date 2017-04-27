@@ -16,11 +16,6 @@ body {
 	font-weight: bold;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 /*index*/
 
@@ -79,21 +74,23 @@ body {
 	text-align: center;
 }
 
+.reasons-row-layout {
+	display: -ms-flexbox;
+	display: flex;
+}
+
 .reason-1 {
-	float: left;
 	width: 400px;
 	text-align: center;
 }
 
 .reason-image1 {
 	width: 800px;
-	float: left;
 }
 
 .feature {
 	width: 400px;
 	height: 330px;
-	float: left;
 	text-align: center;
 	padding-top: 160px;
 	box-sizing: border-box;
@@ -101,19 +98,16 @@ body {
 
 .reason-image2 {
 	width: 800px;
-	float: left;
 }
 
 .reason-2 {
 	width: 400px;
-	float: left;
 	text-align: center;
 }
 
 .row4 {
 	width: 400px;
 	height: 255px;
-	float: left;
 	text-align: center;
 	padding-top: 45px;
 	box-sizing: border-box;
@@ -129,24 +123,26 @@ body {
 
 .main-footer {
 	padding: 36px 0px;
-	min-height: 120px
+	min-height: 120px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
 }
 
 .hashtag {
 	width: 400px;
-	float: left;
-	text-align: center;
+	padding-left: 130px;
+	box-sizing: border-box;
 }
 
 .social {
 	width: 400px;
-	float: left;
 	text-align: center;
 }
 
 .copyright {
 	width: 400px;
-	float: left;
 	text-align: center;
 }
 
@@ -158,9 +154,13 @@ body {
 	
 }
 
+.filters {
+	display: -ms-flexbox;
+	display: flex;
+}
+
 .filter-1 	{
 	width: 253px;
-	float: left;
 	border: none;
 	padding: 0;
 	margin: 0;
@@ -168,7 +168,6 @@ body {
 
 .filter-2 {
 	width: 474px;
-	float: left;
 	border: none;
 	padding: 0;
 	margin: 0;
@@ -176,7 +175,6 @@ body {
 
 .filter-3 {
 	width: 327px;
-	float: left;
 	border: none;
 	padding: 0;
 	margin: 0;
@@ -205,6 +203,7 @@ body {
 	display: inline-block;
 	font-size: 0;
 }
+
 .sorting-list li {
 	display: inline-block;
 	margin-right: 33px;
@@ -214,15 +213,16 @@ body {
 
 .hotel {
 	min-height: 152px;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 25px 72px;
 }
 .hotel-image {
-	float: left;
 	width: 135px;
 	margin-right: 30px;
 }
 
 .hotel-description {
-	float: left;
 	width: 780px;
 }
 
@@ -235,6 +235,5 @@ body {
 }
 
 .hotel-ratings {
-	float: left;
 	width: 111px
 }
