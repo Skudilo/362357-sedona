@@ -3,17 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Sedona | Hotels</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<div class="container">
 			<header class="main-header">
-				<a href="index.html"  class="header-logo">лого</a>
+				<a href="index.html"  class="header-logo"><img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png" alt="LOGO"></a>
 				<nav class="main-navigation">
 					<ul>
 						<li>
-							<a href="№">информация</a>
+							<a href="#">информация</a>
 						</li>
 						<li>
 							<a href="#">фото и видео</a>
@@ -22,14 +23,14 @@
 							<a href="#">карта штата</a>
 						</li>
 						<li>
-							<a>гостиницы</a>
+							<a class="disabled">гостиницы</a>
 						</li>
 					</ul>
 				</nav>
 			</header>
 			<form action="#" method="get" class="filters">
 				<fieldset class="filter-1">
-					<legend>инфраструктура</legend>
+					<legend>инфраструктура:</legend>
 					<p>
 					<input type="checkbox" id="pool" name="pool" checked>
 					<label for="pool">бассейн</label>
@@ -44,7 +45,7 @@
 					</p>
 				</fieldset>
 				<fieldset class="filter-2">
-					<legend>тип жилья</legend>
+					<legend>тип жилья:</legend>
 					<p>
 					<input type="checkbox" id="hotel" name="hotel" checked>
 					<label for="hotel">гостиница</label>
@@ -58,22 +59,34 @@
 					<label for="apartment">апартаменты</label>
 					</p>
 				</fieldset>
-				<fieldset class="filter-3">
-					<legend>стоимость в сутки(р)</legend>
+				<fieldset class="filter-range">
+					<legend>стоимость в сутки (р):</legend>
+					<div class="price-controls">
+						<label class="min-price">от<input type="text" name="min-price" value="0"></label>
+						<label class="max-price">до<input type="text" name="max-price" value="3000"></label>
+					</div>
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
+					</div>
+					<button type="submit" class="btn-transparent">показать</button>
 				</fieldset>
 			</form>
 			<div class="results">
-				<p class="find-text">найдено:3</p>
+				<p class="find-text">найдено: 3</p>
 				<p class="sorting-text">сортировка:</p>
 				<ul class="sorting-list">
 					<li>
-						<a href="">по цене</a>
+						<a class="active">по цене</a>
 					</li>
 					<li>
-						<a href="">по типу</a>
+						<a href="#">по типу</a>
 					</li>
 					<li>
-						<a href="">по рейтингу</a>
+						<a href="#">по рейтингу</a>
 					</li>
 				</ul>
 				<div class="arrow-icon">
@@ -83,7 +96,7 @@
 			</div>
 			<div class="hotels">
 				<div class="hotel">
-					<div class="hotel-image"><img src="http://placehold.it/150x100" alt="Amara Resort & Spa"></div>
+					<div class="hotel-image"><img src="img/amara.jpg"  alt="Amara Resort & Spa"></div>
 					<div class="hotel-description">
 						<a href="#" class="hotel-title">Amara Resort & Spa</a>
 						<div class="hotel-text">
@@ -96,12 +109,17 @@
 						</div>
 					</div>
 					<div class="hotel-ratings">
-						<div class="rating-stars 4stars"></div>
-						<p class="rating-text">рейтинг:8,5</p>
+						<div class="rating-stars">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<p class="rating-text">рейтинг: 8,5</p>
 					</div>
 				</div>
 				<div class="hotel">
-					<div class="hotel-image"><img src="http://placehold.it/150x100" alt="Desert Quail Inn"></div>
+					<div class="hotel-image"><img src="img/desert.jpg" alt="Desert Quail Inn"></div>
 					<div class="hotel-description">
 						<a href="#" class="hotel-title">Desert Quail Inn</a>
 						<div class="hotel-text">
@@ -114,12 +132,16 @@
 						</div>
 					</div>
 					<div class="hotel-ratings">
-						<div class="rating-stars 3stars"></div>
-						<p class="rating-text">рейтинг:8,9</p>
+						<div class="rating-stars">
+						<span></span>
+						<span></span>
+						<span></span>
+						</div>
+						<p class="rating-text">рейтинг: 8,9</p>
 					</div>
 				</div>
 				<div class="hotel">
-					<div class="hotel-image"><img src="http://placehold.it/150x100" alt="Villas at Poco Diablo"></div>
+					<div class="hotel-image"><img src="img/villas.jpg" alt="Villas at Poco Diablo"></div>
 					<div class="hotel-description">
 						<a href="#" class="hotel-title">Villas at Poco Diablo</a>
 						<div class="hotel-text">
@@ -133,25 +155,25 @@
 					</div>
 					<div class="hotel-ratings">
 						<div class="rating-stars">
-							<img src="" alt="" class="2star">
+						<span></span>
+						<span></span>
 						</div>
-						<p class="rating-text">рейтинг:9,2</p>
+						<p class="rating-text">рейтинг: 9,2</p>
 					</div>
 				</div>
 			</div>
-			<footer class="main-footer">
+			<footer class="inner-footer">
 				<div class=hashtag>
 					<a href="#">#visitsedona</a>
 				</div>
 				<div class="social">
-					<a href="#">twitter</a>
-					<a href="#">facebook</a>
-					<a href="#">youtube</a>
+					<a href="#" class="social-btn tw">twitter</a>
+					<a href="#" class="social-btn fb">facebook</a>
+					<a href="#" class="social-btn yt">youtube</a>
 				</div>
 				<div class="copyright">
-					<p>website by Skudilo <br> for
-					<a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
-					</p>
+					<p>website by</p>
+					<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
 				</div>
 			</footer>
 		</div>

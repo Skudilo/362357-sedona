@@ -10,14 +10,14 @@
 	<body>
 		<div class="container">
 			<header class="main-header">
-				<a class="header-logo">лого</a>
+				<a class="header-logo"><img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png" alt="LOGO"></a>
 				<nav class="main-navigation">
 					<ul>
 						<li>
 							<a href="#">информация</a>
 						</li>
 						<li>
-							<a href="#" class="disabled">фото и видео</a>
+							<a href="#">фото и видео</a>
 						</li>
 						<li>
 							<a href="#">карта штата</a>
@@ -29,7 +29,10 @@
 				</nav>
 			</header>
 			<main>
-				<div class="index-photo"></div>
+				<div class="index-photo">
+					<div class="text-block"><img src="img/Welcome.png" alt="welcome"></div>
+					<div><img src="img/%D0%BC%D0%B0%D1%81%D0%BA%D0%B0.png" alt="mask"></div>
+				</div>
 				<section class="reasons">
 					<div class="reasons-promo">
 						<h1 class="reasons-promo-title">седона &mdash; небольшой городок в аризоне, <br> заслуживающий большего!</h1>
@@ -37,7 +40,7 @@
 					</div>
 					<div class="reasons-row-layout reasons-row1">
 						<div class="reason-blue">
-							<h2 class="reason-title">настоящий <br> городок</h2>
+							<h2 class="reason-title white">настоящий <br> городок</h2>
 							<p>&mdash; №1 &mdash;</p>
 							<p class="reason-text">седона &mdash; не аттракцион для туристов,<br> там течёт своя жизнь</p>
 						</div>
@@ -64,7 +67,7 @@
 							<img src="img/bridge.jpg" alt="bridge" width="800" height="256">
 						</div>
 						<div class="reason-blue">
-							<h2 class="reason-title">Там есть <br> мост дьявола</h2>
+							<h2 class="reason-title white">Там есть <br> мост дьявола</h2>
 							<p>&mdash; №2 &mdash;</p>
 							<p class="reason-text">да, по нему можно пройти! если конечно <br> вы осмелитесь</p>
 						</div>
@@ -92,20 +95,21 @@
 						<p class="search-title">заинтересовались?</p>
 						<p>укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 					</div>
+					<div class="map"></div>
 					<div class="search-form">
 						<button type="submit" class="btn form-btn">поиск гостиницы в седоне</button>
 						<form class="form" action="#" method="post">
-							<fieldset class="in">
+							<div class="in">
 								<label for="arrival">дата заезда:</label>
-								<input type="date" id="arrival" name="arrival" value="2014-04-24">
-								<span class="calendar"></span>
-							</fieldset>
-							<fieldset class="out">
+								<input type="text" id="arrival" name="arrival" value="24 апреля 2017">
+								<span class="icon-calendar"></span>
+							</div>
+							<div class="out">
 								<label for="departure">дата выезда:</label>
-								<input type="date" id="departure" name="departure" value="2014-07-04">
-								<span class="calendar"></span>
-							</fieldset>
-							<fieldset class="people">
+								<input type="text" id="departure" name="departure" value="4 июля 2017">
+								<span class="icon-calendar"></span>
+							</div>
+							<div class="people">
 								<label for="adults">взрослые:</label>
 								<button type="submit" class="icon-minus">-</button>
 								<input type="text" id="adults" name="adults" pattern="0-9" value="2">
@@ -114,7 +118,7 @@
 								<button type="submit" class="icon-minus">-</button>
 								<input type="text" id="children" name="children" pattern="0-9" value="0">
 								<button type="submit" class="icon-plus">+</button>
-							</fieldset>
+							</div>
 							<button type="submit" class="btn find-btn">найти</button>
 						</form>
 					</div>
@@ -125,13 +129,13 @@
 					<a href="#">#visitsedona</a>
 				</div>
 				<div class="social">
-					<a href="#">twitter</a>
-					<a href="#">facebook</a>
-					<a href="#">youtube</a>
+					<a href="#" class="social-btn tw">twitter</a>
+					<a href="#" class="social-btn fb">facebook</a>
+					<a href="#" class="social-btn yt">youtube</a>
 				</div>
 				<div class="copyright">
-					<p>website by Skudilo <br> for</p>
-					<a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+					<p>website by</p>
+					<a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
 				</div>
 			</footer>
 		</div>
