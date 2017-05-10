@@ -5,12 +5,12 @@
 		<title>Sedona</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body>
 		<div class="container">
 			<header class="main-header">
-				<a class="header-logo"><img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png" alt="LOGO"></a>
+				<a class="header-logo"><img src="img/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png" alt="LOGO" width="138" height="70"></a>
 				<nav class="main-navigation">
 					<ul>
 						<li>
@@ -101,22 +101,22 @@
 							<div class="in">
 								<label for="arrival">дата заезда:</label>
 								<input type="text" id="arrival" name="arrival" value="24 апреля 2017" required>
-								<span class="icon-calendar"></span>
+								<span class="icon-calendar">кнопка для появления календаря</span>
 							</div>
 							<div class="out">
 								<label for="departure">дата выезда:</label>
 								<input type="text" id="departure" name="departure" value="4 июля 2017" required>
-								<span class="icon-calendar"></span>
+								<span class="icon-calendar">кнопка для появления календаря</span>
 							</div>
 							<div class="people">
 								<label for="adults">взрослые:</label>
-								<button type="submit" class="icon-minus">-</button>
+								<button type="submit" class="icon-minus">кнопка для уменьшения количества взрослых</button>
 								<input type="text" id="adults" name="adults" pattern="0-9" value="2">
-								<button type="submit" class="icon-plus">+</button>
+								<button type="submit" class="icon-plus">кнопка для увеличения количества взрослых</button>
 								<label for="children">дети:</label>
-								<button type="submit" class="icon-minus">-</button>
+								<button type="submit" class="icon-minus">кнопка для уменьшения количества детей</button>
 								<input type="text" id="children" name="children" pattern="0-9" value="0">
-								<button type="submit" class="icon-plus">+</button>
+								<button type="submit" class="icon-plus">кнопка для увеличения количества детей</button>
 							</div>
 							<button type="submit" class="btn find-btn">найти</button>
 						</form>
@@ -138,18 +138,6 @@
 				</div>
 			</footer>
 		</div>
-		<script>
-			var button = document.querySelector(".form-btn");
-			
-			var form = document.querySelector(".form");
-			
-			var arrival = document.querySelector("[name=arrival]")
-			
-			button.addEventListener( "click", function (event) {
-				event.preventDefault();
-				form.classList.toggle("form-show");
-				arrival.focus();
-			} )
-		</script>
+		<script src="js/script.min.js"></script>
 	</body>
 </html>

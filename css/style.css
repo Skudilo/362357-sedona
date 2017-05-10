@@ -258,7 +258,7 @@ body {
 	
 }
 .form {
-	display: none;
+	display: block;
 	
 	padding: 55px;
 	box-sizing: border-box;
@@ -266,12 +266,12 @@ body {
 	font-weight: bold;
 	
 	background-color: #ffffff;
+	
+	animation: bounce 0.9s;
 }
 
 .form-show {
-	display: block;
-	
-	animation: bounce 0.5s;
+	display: none;
 }
 
 .in,
@@ -331,16 +331,18 @@ body {
 	width: 21px;
 	height: 22px;
 	 
-	background: url(../img/calendar.png) no-repeat;
+	font-size: 0;
+	 
+	background-image: url(../img/calendar.png);
 	cursor: pointer;
 }
 
 .icon-calendar:hover {
-	background: url(../img/calendar2.png) no-repeat;
+	background-image: url(../img/calendar2.png);
 }
 
 .icon-calendar:active {
-	background: url(../img/calendar3.png) no-repeat;
+	background-image: url(../img/calendar3.png);
 }
 
 .people {
@@ -378,7 +380,7 @@ body {
 	font-size: 0;
 	
 	border: 0;
-	background-color: white;
+	background-color: #ffffff;
 	cursor: pointer;
 }
 
@@ -645,8 +647,6 @@ body {
 	
 	border: 2px solid #ffffff;
 	border-radius: 2px;
-	
-
 }
 
 .price-controls::after {
@@ -661,7 +661,6 @@ body {
 	
 	-ms-(-50%, -50%);
 	    transform: translate(-50%, -50%);
-	
 	
 	background: #ffffff;
 }
@@ -849,7 +848,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
-	vertical-align: baseline;
+	vertical-align: middle;
 }
 
 .sorting-text {
@@ -860,7 +859,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 	font-size: 12px;
 	line-height: 18px;
 	color: #000000;
-	vertical-align: baseline;
+	vertical-align: middle
 }
 
 .sorting-list {
@@ -868,22 +867,20 @@ input[type="checkbox"]:checked:disabled + label::after {
 	padding: 0;
 	margin-right: 470px;
 	
-	vertical-align: baseline;
 	font-size: 0;
-	
 }
 
 .sorting-list li {
 	display: inline-block;
 	margin-right: 33px;
 	
-	vertical-align: baseline;
 	font-size: 14px;
+	vertical-align: middle
 }
 
 .sorting-list a {
 	font-size: 12px;
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 	text-decoration: none;
 	
 	border-bottom: 1px dotted #81b3d2;
@@ -891,12 +888,10 @@ input[type="checkbox"]:checked:disabled + label::after {
 
 .sorting-list a:hover {
 	color: #81b3d2;
-	opacity: 1;
 }
 
 .sorting-list a:active:not(.active) {
 	color: #000000;
-	opacity: 1;
 	
 	border: none;
 }
@@ -916,7 +911,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 .arrow-up,
 .arrow-down {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	width: 10px;
 	height: 10px;
 	
