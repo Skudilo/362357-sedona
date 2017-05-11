@@ -94,12 +94,11 @@ body {
 	width: 1200px;
 	height: 508px;
 	background-color: lightblue;
-	background-image: url(../img/Welcome.png),
-	url(../img/маска.png),	url(../img/%D0%A4%D0%BE%D0%BD.jpg) ;
+	background-image: url(../img/welcome.png),
+	url(../img/mask.png), url(../img/index-bg.jpg);
 	background-position: center center, bottom;
 	background-repeat: no-repeat;
 }
-
 
 .reasons-promo {
 	padding: 58px 0 40px;
@@ -209,7 +208,7 @@ body {
 	width: 568px;
 }
 
-.btn{
+.btn {
 	font-size: 21px;
 	line-height: 26px;
 	color: white;
@@ -608,7 +607,7 @@ body {
 	display: flex;
 	padding: 25px 72px 0 72px;
 	
-	background: url(../img/filter%20background.jpg) 0 -57px no-repeat
+	background: url(../img/filter-background.jpg) 0 -57px no-repeat
 }
 
 .filters fieldset {
